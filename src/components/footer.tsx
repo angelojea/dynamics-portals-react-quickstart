@@ -2,7 +2,7 @@ import { ActionButton, CommandButton, Stack, Text } from "@fluentui/react";
 import { useContext } from "react";
 import { AppContext } from "../app.context";
 import { Route } from "../contants";
-import { I18nLanguage, I18nTranslationKey, translate } from "../i18n";
+import { I18nLanguage, I18nKey, translate } from "../i18n";
 import { isUserSignedIn, navigateTo, useStyles } from "../services";
 import { Separator } from "./separator";
 
@@ -44,31 +44,31 @@ export function Footer() {
         <div  className={styles.footerContainer}>
             <Stack tokens={{ childrenGap: 5 }} horizontal>
                 <ActionButton className={styles.link} onClick={() => navigateTo(Route.Home)}>
-                    {translate(I18nTranslationKey.footerLinkHome)}
+                    {translate(I18nKey.footerLinkHome)}
                 </ActionButton>
                 {isUserSignedIn() &&
                 <>
                     <Separator vertical />
                     <ActionButton className={styles.link} onClick={() => navigateTo(Route.Page1)}>
-                        {translate(I18nTranslationKey.footerLinkPage1)}
+                        {translate(I18nKey.footerLinkPage1)}
                     </ActionButton>
                     <Separator vertical />
                     <ActionButton className={styles.link} onClick={() => navigateTo(Route.Page2)}>
-                        {translate(I18nTranslationKey.footerLinkPage2)}
+                        {translate(I18nKey.footerLinkPage2)}
                     </ActionButton>
                     <Separator vertical />
                     <ActionButton className={styles.link} onClick={() => navigateTo(Route.Page3)}>
-                        {translate(I18nTranslationKey.footerLinkPage3)}
+                        {translate(I18nKey.footerLinkPage3)}
                     </ActionButton>
                 </>
                 }
                 <div className={styles.langPickerContainer}>
-                    <CommandButton text={translate(I18nTranslationKey.footerLangLabel)}
+                    <CommandButton text={translate(I18nKey.footerLangLabel)}
                         styles={{ root: { color: palette.neutralLight }, menuIcon: { color: palette.neutralLight } }}
                         menuProps={{
                                 items: [
-                                    { key: I18nLanguage.Spanish, text: translate(I18nTranslationKey.spanishLangName), onClick: changeLang },
-                                    { key: I18nLanguage.English, text: translate(I18nTranslationKey.englishLangName), onClick: changeLang },
+                                    { key: I18nLanguage.Spanish, text: translate(I18nKey.generalSpanish), onClick: changeLang },
+                                    { key: I18nLanguage.English, text: translate(I18nKey.generalEnglish), onClick: changeLang },
                                 ],
                             }
                         }

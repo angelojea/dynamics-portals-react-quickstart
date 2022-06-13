@@ -1,15 +1,26 @@
 {
-    "t-hello": "Hello! Good morning, ",
-    "t-englishLangName": "English",
-    "t-spanishLangName": "Spanish",
-
-    "t-navbarSignIn": "Sign In",
-    "t-navbarSignUp": "Sign Up",
-    "t-navbarSignOut": "Sign Out",
-    
-    "t-footerLinkHome": "Home",
-    "t-footerLinkPage1": "Page 1",
-    "t-footerLinkPage2": "Page 2",
-    "t-footerLinkPage3": "Page 3",
-    "t-footerLangLabel": "English"
+    "general": {
+        "hello": "Hello! Good morning, ",
+        "ok": "Ok",
+        "accept": "Accept",
+        "cancel": "Cancel",
+        "english": "English",
+        "spanish": "Spanish"
+    },
+    "navbar": {
+        "signIn": "Sign In",
+        "signUp": "Sign Up",
+        "signOut": "Sign Out",
+        "email": "Email",
+        "password": "Password",
+        "firstname": "First Name",
+        "lastname": "Last Name"
+    },
+    "footer": {
+        "linkHome": "Home",
+        "linkPage1": "Page 1",
+        "linkPage2": "Page 2",
+        "linkPage3": "Page 3",
+        "langLabel": "English"
+    }
 }

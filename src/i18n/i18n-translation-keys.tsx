@@ -1,26 +1,33 @@
 import i18next from "i18next";
 
-export enum I18nTranslationKey {
-    hello = 't-hello',
-    ok = 't-ok',
-    accept = 't-accept',
-    cancel = 't-cancel',
-    englishLangName = 't-englishLangName',
-    spanishLangName = 't-spanishLangName',
-    navbarSignIn = 't-navbarSignIn',
-    navbarSignUp = 't-navbarSignUp',
-    navbarSignOut = 't-navbarSignOut',
-    navbarEmail = 't-navbarEmail',
-    navbarPassword = 't-navbarPassword',
-    navbarFirstname = 't-navbarFirstname',
-    navbarLastname = 't-navbarLastname',
-    footerLinkHome = 't-footerLinkHome',
-    footerLinkPage1 = 't-footerLinkPage1',
-    footerLinkPage2 = 't-footerLinkPage2',
-    footerLinkPage3 = 't-footerLinkPage3',
-    footerLangLabel = 't-footerLangLabel',
+export enum I18nLanguage {
+    English = 'en',
+    Spanish = 'es',
 }
 
-export const translate = (key: I18nTranslationKey) => {
+export enum I18nKey {
+    generalHello = 'general.hello',
+    generalOk = 'general.ok',
+    generalAccept = 'general.accept',
+    generalCancel = 'general.cancel',
+    generalEnglish = 'general.english',
+    generalSpanish = 'general.spanish',
+
+    navbarSignIn = 'navbar.signIn',
+    navbarSignUp = 'navbar.signUp',
+    navbarSignOut = 'navbar.signOut',
+    navbarEmail = 'navbar.email',
+    navbarPassword = 'navbar.password',
+    navbarFirstname = 'navbar.firstname',
+    navbarLastname = 'navbar.lastname',
+
+    footerLinkHome = 'footer.linkHome',
+    footerLinkPage1 = 'footer.linkPage1',
+    footerLinkPage2 = 'footer.linkPage2',
+    footerLinkPage3 = 'footer.linkPage3',
+    footerLangLabel = 'footer.langLabel',
+}
+
+export const translate = (key: I18nKey) => {
     return i18next.t(key);
   }

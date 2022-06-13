@@ -2,7 +2,7 @@ import { Stack, Text } from "@fluentui/react";
 import { useContext, useEffect } from "react";
 import { AppContext } from "../app.context";
 import { Globals, Route } from "../contants";
-import { I18nTranslationKey, translate } from "../i18n";
+import { I18nKey, translate } from "../i18n";
 import { Entity } from "../models";
 import { getParameterByName, getUserInfo, navigateTo, updateEntity, useStyles } from "../services";
 

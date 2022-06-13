@@ -1,7 +1,7 @@
 import { Callout, DefaultButton, IconButton, Modal, Pivot, PivotItem, Stack, Text, TextField } from "@fluentui/react";
 import { useContext, useState } from "react";
 import { AppContext } from "../app.context";
-import { I18nTranslationKey, translate } from "../i18n";
+import { I18nKey, translate } from "../i18n";
 import { handleError, isUserSignedIn, signIn, signOut, signUp, useStyles } from "../services";
 
 export function Navbar() {
@@ -48,11 +48,11 @@ export function Navbar() {
             <Stack tokens={{ childrenGap: 10 }} horizontal reversed styles={{ root: { alignItems: 'center' } }}>
                 {
                     isUserSignedIn() ?
-                    <DefaultButton onClick={() => { app.setLoading(true);  signOut(); }}>{translate(I18nTranslationKey.navbarSignOut)}</DefaultButton>
+                    <DefaultButton onClick={() => { app.setLoading(true);  signOut(); }}>{translate(I18nKey.navbarSignOut)}</DefaultButton>
                     :
                     <>
                     <DefaultButton id={signInButtonId} onClick={() => setShowCallout(true)}>
-                        {translate(I18nTranslationKey.navbarSignIn)}
+                        {translate(I18nKey.navbarSignIn)}
                     </DefaultButton>
                     {showCallout && (
                         <Modal styles={{ main: { padding: '10px 20px' } }}
@@ -63,12 +63,12 @@ export function Navbar() {
                             <Pivot className={styles.pivot} styles={{ itemContainer: { paddingTop: '15px' } }}>
                                 <PivotItem headerText="Sign In">
                                     <Stack tokens={{ childrenGap: 20 }}>
-                                        <TextField label={translate(I18nTranslationKey.navbarEmail)}
+                                        <TextField label={translate(I18nKey.navbarEmail)}
                                             required
                                             value={email}
                                             onChange={(e) => setEmail(e.currentTarget.value)}
                                         />
-                                        <TextField label={translate(I18nTranslationKey.navbarPassword)}
+                                        <TextField label={translate(I18nKey.navbarPassword)}
                                             required
                                             value={password}
                                             type="password"
@@ -83,7 +83,7 @@ export function Navbar() {
                                                     signIn(email, password);
                                                 }}
                                             >
-                                                {translate(I18nTranslationKey.navbarSignIn)}
+                                                {translate(I18nKey.navbarSignIn)}
                                             </DefaultButton>
                                             <DefaultButton onClick={() => setShowCallout(false)}>Cancel</DefaultButton>
                                         </Stack>
@@ -92,19 +92,19 @@ export function Navbar() {
                                 <PivotItem headerText="Sign Up">
                                     <Stack tokens={{ childrenGap: 20 }}>
                                         <Stack tokens={{ childrenGap: 20 }} horizontal>
-                                            <TextField label={translate(I18nTranslationKey.navbarFirstname)}
+                                            <TextField label={translate(I18nKey.navbarFirstname)}
                                                 required value={firstname} onChange={(e) => setFirstname(e.currentTarget.value)}
                                             />
-                                            <TextField label={translate(I18nTranslationKey.navbarLastname)}
+                                            <TextField label={translate(I18nKey.navbarLastname)}
                                                 required value={lastname} onChange={(e) => setLastname(e.currentTarget.value)}
                                             />
                                         </Stack>
-                                        <TextField label={translate(I18nTranslationKey.navbarEmail)}
+                                        <TextField label={translate(I18nKey.navbarEmail)}
                                             required
                                             value={email}
                                             onChange={(e) => setEmail(e.currentTarget.value)}
                                         />
-                                        <TextField label={translate(I18nTranslationKey.navbarPassword)}
+                                        <TextField label={translate(I18nKey.navbarPassword)}
                                             required
                                             value={password}
                                             type="password"
