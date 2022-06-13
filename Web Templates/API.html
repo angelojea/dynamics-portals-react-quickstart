@@ -1,0 +1,17 @@
+{% if params["entityform"].size > 0 %}
+    {% entityform name: params["entityform"] %}
+{% elsif params["template"].size > 0 %}
+    {% capture command %}
+        {%  include   params["template"]  %}
+    {% endcapture %}
+    {{command}}
+{% elsif params["snippet"].size > 0 %}
+    {% assign content = snippets[params["snippet"]] %}
+    {% if content %}
+        {{ content }}
+    {% else %}
+        No snippet was found.
+    {% endif %}
+{% elsif params["record-id"].size > 0 %}
+{{entities["aoj_portalrequest"][params["record-id"]]["aoj_createdrecordid"]}}
+{% endif %}

@@ -1,0 +1,44 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/office-ui-fabric-core/dist/sass/References';
+
+html,
+body,
+#aoj-app {
+  height: 100% !important;
+  min-height: 100% !important;
+  
+  .Toastify__toast-container {
+    font-family: "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 500px;
+  }
+  .animated {
+      animation-duration: 0.3s;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+//Dark Theme specific styles
+.aoj-dark {
+  .ms-depth-4 { box-shadow: 0 1.6px 3.6px 0 rgb(255 255 255 / 13%), 0 0.3px 0.9px 0 rgb(255 255 255 / 11%); }
+
+  .ms-depth-8 { box-shadow: 0 3.2px 7.2px 0 rgb(255 255 255 / 13%), 0 0.6px 1.8px 0 rgb(255 255 255 / 11%); }
+
+  .ms-depth-16 { box-shadow: 0 6.4px 14.4px 0 rgb(255 255 255 / 13%), 0 1.2px 3.6px 0 rgb(255 255 255 / 11%); }
+
+  .ms-depth-64 { box-shadow: 0 25.6px 57.6px 0 rgb(255 255 255 / 22%), 0 4.8px 14.4px 0 rgb(255 255 255 / 18%); }
+
+  .ms-Callout {
+    box-shadow: rgb(255 255 255 / 13%) 0px 6.4px 14.4px 0px, rgb(255 255 255 / 11%) 0px 1.2px 3.6px 0px !important;
+  }
+}

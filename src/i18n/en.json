@@ -1,0 +1,16 @@
+{
+    "t-hello": "Hello! Good morning, ",
+    "t-englishLangName": "English",
+    "t-spanishLangName": "Spanish",
+
+    "t-navbarSignIn": "Sign In",
+    "t-navbarSignUp": "Sign Up",
+    "t-navbarSignOut": "Sign Out",
+    "t-navbarFirstname": "First Name here",
+    
+    "t-footerLinkHome": "Home",
+    "t-footerLinkPage1": "Page 1",
+    "t-footerLinkPage2": "Page 2",
+    "t-footerLinkPage3": "Page 3",
+    "t-footerLangLabel": "English"
+}

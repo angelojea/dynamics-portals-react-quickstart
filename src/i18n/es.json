@@ -1,0 +1,15 @@
+{
+    "t-hello": "¡Hola! Buenos dias, ",
+    "t-englishLangName": "Inglés",
+    "t-spanishLangName": "Español",
+    
+    "t-navbarSignIn": "Entrar",
+    "t-navbarSignUp": "Registrar-se",
+    "t-navbarSignOut": "Salir",
+
+    "t-footerLinkHome": "Pagina Inicial",
+    "t-footerLinkPage1": "Pagina 1",
+    "t-footerLinkPage2": "Pagina 2",
+    "t-footerLinkPage3": "Pagina 3",
+    "t-footerLangLabel": "Español"
+}
