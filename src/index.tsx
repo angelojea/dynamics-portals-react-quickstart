@@ -10,4 +10,4 @@ import '../node_modules/react-toastify/dist/ReactToastify.css';
 
 initializeIcons();
 
-ReactDOM.render(<App />, document.getElementById('aoj-app'));
+ReactDOM.render(<App />, document.getElementById('aoj-app-container'));
