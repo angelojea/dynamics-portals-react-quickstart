@@ -72,4 +72,4 @@ Delete downloaded portal
 #>
 cd ..;
 
-rmdir $portalPath /s;
+rmdir $directories[0].Name /s /q;
